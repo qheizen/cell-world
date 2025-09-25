@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d13bb5f-aeaa-4553-a5a2-32a39c23f1f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/GUI/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/GUI/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/GUI/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/GUI/Graph.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CellWorld/Actors/GlobalEntities/SimulationManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/GlobalEntities/SimulationManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/ActorClass.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/ActorClass.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Group.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Cell.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CellWorld/Constants/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Constants/Constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CellWorld/InterfaceTemplates/SituationInputTemplate.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/InterfaceTemplates/SituationInputTemplate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/ROFL.json" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/ROFL.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CellWorld/Start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

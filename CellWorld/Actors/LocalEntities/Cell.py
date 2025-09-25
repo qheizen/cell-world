@@ -187,7 +187,7 @@ class Cell(actor.Actor):
         
         speed = self._vec_velocity.length()
         if self._is_hungerred:
-            speed_max = self._speed_max * 2.
+            speed_max = self._speed_max * 1.3
         else:
             speed_max = self._speed_max
             

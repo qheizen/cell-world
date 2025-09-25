@@ -52,6 +52,7 @@ def create_cell_window(gui_manager, saver_manager=None, sim_manager=None):
     def submit_login():
         form_data = gui_manager.get_form_data("create_cell")
         saver_manager.save_cell(form_data)
+        create_cell_frame.status = "killed"
         
     submit_btn = Button("submit", "Создать клетку", (0, -370), (100, 40), (109, 118, 224), 
                        (255, 255, 255), "create_cell")
@@ -80,6 +81,7 @@ def del_cell_window(gui_manager, saver_manager=None, sim_manager=None):
     def submit_login():
         form_data = gui_manager.get_form_data("del_cell")
         saver_manager.del_cell(form_data.get("name"))
+        create_cell_frame.status = "killed"
         
     submit_btn = Button("submit", "Удалить клетку", (0, -40), (100, 40), (109, 118, 224), 
                        (255, 255, 255), "del_cell")

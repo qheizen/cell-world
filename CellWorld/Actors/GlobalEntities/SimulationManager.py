@@ -1,11 +1,6 @@
 import pygame
-import os
-import CellWorld.Tools.StaticLib as static
 import CellWorld.Constants.Constants as const
 import CellWorld.SerializableTools.Serializer as sr
-from CellWorld.Actors.LocalEntities.Cell import Cell
-from CellWorld.Actors.LocalEntities.Group import Group
-from CellWorld.Actors.LocalEntities.Event import Event
 from CellWorld.Actors.LocalEntities.ActorClass import Actor
 from CellWorld.Actors.GlobalEntities.EventManager import EventManager
 import CellWorld.InterfaceTemplates.SituationInputTemplate as sit 

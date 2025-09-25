@@ -26,13 +26,13 @@ class GameScene(simuc.Simulation):
                 for i in range(30):
                     self.spawn_to_world(cell_type)
             
-            cell_group = self.game_manager.get_group_prototype_with_name("namevd")
+            cell_group = self.game_manager.get_group_prototype_with_name("nanofield")
             self.spawn_to_world(cell_group)
         except Exception as e:
             print(f"Error while spawning initial cells: {e}")
 
 sim = GameScene()
-sim.initialize_game("CellWorld/ROFL.json")
+sim.initialize_game("CellWorld/Scene1.json")
 sim.initialize_spawn()
 sim.initialize_gui()
 sim.main()

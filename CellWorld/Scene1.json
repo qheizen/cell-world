@@ -1,0 +1,334 @@
+{
+  "global_options": {
+    "credentials": {
+      "fps_lock": 60,
+      "window_size": [
+        1280,
+        720
+      ],
+      "background_color": [
+        8,
+        12,
+        30
+      ],
+      "debug_draw": true
+    },
+    "physical": {
+      "wall_margin": 100,
+      "wall_strength": 250,
+      "constants": {
+        "g": 1.0
+      }
+    }
+  },
+  "cell_options": [
+    {
+      "credentials": {
+        "name": "RepairBot",
+        "color": [
+          40,
+          220,
+          140
+        ],
+        "visual_distance": 250,
+        "size": 6,
+        "draw_text_table": false,
+        "draw_lines": false,
+        "death_color": [
+          20,
+          110,
+          70
+        ]
+      },
+      "physical": {
+        "cell_mass": 0.8,
+        "cell_min_speed": 0.0,
+        "cell_max_speed": 3.2,
+        "strength": 2,
+        "drag_factor": 0.94,
+        "is_movable": true,
+        "is_gravitate": false
+      },
+      "life": {
+        "metabolism_rate": 0.8,
+        "hunger_border": 40,
+        "eat_radius": 10,
+        "lifetime": 12000,
+        "is_mortal": true,
+        "is_metabolism": true,
+        "food": [
+          {
+            "cell_type_name": "Resource",
+            "stats_multiplier": 1
+          }
+        ]
+      },
+      "spawner": {
+        "spawn_cell_types": [
+          "RepairBot"
+        ],
+        "spawned_start_speed": [
+          2,
+          1
+        ],
+        "spawn_delay": 10,
+        "spawn_directions": [
+          [
+            1,
+            1
+          ]
+        ],
+        "max_spawn_number": 150,
+        "mutation_rate": 0.18,
+        "crossover_rate": 0.15
+      },
+      "community": {
+        "attached_offsets": [
+          {
+            "cell_type_name": "Sensor",
+            "offset": 20
+          }
+        ],
+        "relationship": [
+          {
+            "cell_type_name": "RepairBot",
+            "relation": 30,
+            "preferred_distance": 12,
+            "hunger_distance": 8
+          },
+          {
+            "cell_type_name": "Destructor",
+            "relation": -80,
+            "preferred_distance": 30,
+            "hunger_distance": 15
+          }
+        ],
+        "friendship": []
+      },
+      "actions": {}
+    },
+    {
+      "credentials": {
+        "name": "Sensor",
+        "color": [
+          100,
+          160,
+          255
+        ],
+        "visual_distance": 600,
+        "size": 4,
+        "draw_text_table": false,
+        "draw_lines": false,
+        "death_color": [
+          40,
+          80,
+          160
+        ]
+      },
+      "physical": {
+        "cell_mass": 0.4,
+        "cell_min_speed": 0.0,
+        "cell_max_speed": 1.0,
+        "strength": 1,
+        "drag_factor": 0.98,
+        "is_movable": true,
+        "is_gravitate": false
+      },
+      "life": {
+        "metabolism_rate": 0.2,
+        "hunger_border": 20,
+        "eat_radius": 6,
+        "lifetime": 20000,
+        "is_mortal": true,
+        "is_metabolism": false,
+        "food": []
+      },
+      "spawner": {
+        "spawn_cell_types": [
+          "Sensor"
+        ],
+        "spawned_start_speed": [
+          0,
+          0
+        ],
+        "spawn_delay": 40,
+        "spawn_directions": [
+          [
+            0,
+            0
+          ]
+        ],
+        "max_spawn_number": 80,
+        "mutation_rate": 0.05,
+        "crossover_rate": 0.05
+      },
+      "community": {
+        "attached_offsets": [],
+        "relationship": [
+          {
+            "cell_type_name": "RepairBot",
+            "relation": 50,
+            "preferred_distance": 30,
+            "hunger_distance": 0
+          }
+        ],
+        "friendship": []
+      },
+      "actions": {}
+    },
+    {
+      "credentials": {
+        "name": "Destructor",
+        "color": [
+          240,
+          80,
+          60
+        ],
+        "visual_distance": 300,
+        "size": 9,
+        "draw_text_table": false,
+        "draw_lines": false,
+        "death_color": [
+          120,
+          40,
+          30
+        ]
+      },
+      "physical": {
+        "cell_mass": 1.8,
+        "cell_min_speed": 0.0,
+        "cell_max_speed": 3.8,
+        "strength": 6,
+        "drag_factor": 0.9,
+        "is_movable": true,
+        "is_gravitate": false
+      },
+      "life": {
+        "metabolism_rate": 1.6,
+        "hunger_border": 30,
+        "eat_radius": 14,
+        "lifetime": 8000,
+        "is_mortal": true,
+        "is_metabolism": true,
+        "food": [
+          {
+            "cell_type_name": "RepairBot",
+            "stats_multiplier": 2
+          }
+        ]
+      },
+      "spawner": {
+        "spawn_cell_types": [
+          "Destructor"
+        ],
+        "spawned_start_speed": [
+          3,
+          2
+        ],
+        "spawn_delay": 22,
+        "spawn_directions": [
+          [
+            -1,
+            -1
+          ]
+        ],
+        "max_spawn_number": 40,
+        "mutation_rate": 0.12,
+        "crossover_rate": 0.12
+      },
+      "community": {
+        "attached_offsets": [],
+        "relationship": [
+          {
+            "cell_type_name": "Destructor",
+            "relation": -40,
+            "preferred_distance": 50,
+            "hunger_distance": 20
+          }
+        ],
+        "friendship": []
+      },
+      "actions": {}
+    },
+    {
+      "credentials": {
+        "name": "Resource",
+        "color": [
+          200,
+          200,
+          120
+        ],
+        "visual_distance": 120,
+        "size": 3,
+        "draw_text_table": false,
+        "draw_lines": false,
+        "death_color": [
+          140,
+          140,
+          80
+        ]
+      },
+      "physical": {
+        "cell_mass": 0.3,
+        "cell_min_speed": 0.0,
+        "cell_max_speed": 0.0,
+        "strength": 1,
+        "drag_factor": 1.0,
+        "is_movable": false,
+        "is_gravitate": false
+      },
+      "life": {
+        "metabolism_rate": 0.0,
+        "hunger_border": 0,
+        "eat_radius": 0,
+        "lifetime": 10000,
+        "is_mortal": true,
+        "is_metabolism": false,
+        "food": []
+      },
+      "spawner": {
+        "spawn_cell_types": [
+          "Resource"
+        ],
+        "spawned_start_speed": [
+          0,
+          0
+        ],
+        "spawn_delay": 12,
+        "spawn_directions": [
+          [
+            0,
+            0
+          ]
+        ],
+        "max_spawn_number": 300,
+        "mutation_rate": 0.01,
+        "crossover_rate": 0.01
+      },
+      "community": {
+        "attached_offsets": [],
+        "relationship": [],
+        "friendship": []
+      },
+      "actions": {}
+    }
+  ],
+  "cell_groups": [
+    {
+      "credentials": {
+        "name": "nanofield",
+        "size": 4.0
+      },
+      "group": {
+        "cells_type_names": [
+          "RepairBot",
+          "Sensor",
+          "Destructor",
+          "Resource"
+        ],
+        "cell_count": 220,
+        "spawn_radius": 500.0
+      }
+    }
+  ]
+}
