@@ -101,7 +101,7 @@ class Simulation:
             self._mega_clock += 1/60
             if self.delay < 0:
                 self.collect_stats()
-                self.delay = 5
+                self.delay = 3
                   
             for actor in list(self._actual_entities_on_board):
                 try:

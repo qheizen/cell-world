@@ -1,0 +1,102 @@
+{
+  "global_options": {
+    "credentials": {
+      "fps_lock": 60,
+      "window_size": [
+        1280,
+        720
+      ],
+      "background_color": [
+        15,
+        25,
+        63
+      ],
+      "debug_draw": true
+    },
+    "physical": {
+      "wall_margin": 200,
+      "wall_strength": 300,
+      "constants": {
+        "g": 6.7
+      }
+    }
+  },
+  "cell_options": [
+    {
+      "credentials": {
+        "name": "namev",
+        "color": [
+          255,
+          255,
+          255
+        ],
+        "visual_distance": 40000,
+        "size": 5,
+        "draw_text_table": false,
+        "draw_lines": false,
+        "death_color": [
+          70,
+          70,
+          70
+        ]
+      },
+      "physical": {
+        "cell_mass": 3,
+        "cell_min_speed": 0.0,
+        "cell_max_speed": 13,
+        "strength": 5,
+        "drag_factor": 0.99,
+        "is_movable": true,
+        "is_gravitate": true
+      },
+      "life": {
+        "metabolism_rate": 1.4,
+        "hunger_border": 50,
+        "eat_radius": 12,
+        "lifetime": 4000,
+        "is_mortal": false,
+        "is_metabolism": false,
+        "food": [
+          {
+            "cell_type_name": "namev",
+            "stats_multiplier": 2
+          }
+        ]
+      },
+      "spawner": {
+        "spawn_cell_types": [
+          "namev"
+        ],
+        "spawned_start_speed": [
+          3,
+          3
+        ],
+        "spawn_delay": 3,
+        "spawn_directions": [
+          [
+            3,
+            3
+          ]
+        ],
+        "max_spawn_number": 0,
+        "mutation_rate": 0.2,
+        "crossover_rate": 0.2
+      },
+      "community": {
+        "attached_offsets": [
+          {
+            "cell_type_name": "namev",
+            "offset": 0
+          }
+        ],
+        "relationship": [
+        ],
+        "friendship": [
+        ]
+      },
+      "actions": {}
+    }
+  ],
+  "cell_groups": [
+  ]
+}

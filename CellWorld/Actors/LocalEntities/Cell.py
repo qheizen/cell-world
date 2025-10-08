@@ -134,6 +134,14 @@ class Cell(actor.Actor):
         if not self._get_option("debug_draw"):
             return
         
+        scale_factor = 3 
+        end_point = (int(self._vec_position.x + self._vec_velocity.x * scale_factor), 
+                    int(self._vec_position.y + self._vec_velocity.y * scale_factor))
+
+        pygame.draw.line(surface, const.COLORS["red"], 
+                        (int(self._vec_position.x), int(self._vec_position.y)),
+                        end_point, width=2)
+        
         if self._draw_lines:
             for friend in self._friendly_cells:
                 if friend != self._hunting_at:
@@ -169,7 +177,7 @@ class Cell(actor.Actor):
             vec_to_other = other._vec_position - self._vec_position
             dist = vec_to_other.length()
             if dist >= self.visual_distance or dist < const.OVERLAP_DIST:
-                continue
+                dist = 5
             
             result_force += self._gravitation_tick(other, vec_to_other)
             result_force += self._relationship_tick(other, vec_to_other)
@@ -268,18 +276,21 @@ class Cell(actor.Actor):
         if not self.is_gravitate:
             return Vector2(0, 0)
         
-        g = self._get_option("constants").get("g", const.CONST_G)
-        distance_sq = max(vec_to_other.length_squared(), const.OVERLAP_SAFE_DIST)
-        if distance_sq <= self._size:
+        min_distance = (self._size + other._size) * 1.1
+        distance = max(vec_to_other.length(), min_distance)
+        
+        if distance <= (self._size + other._size):
             return Vector2(0, 0)
         
         try:
             force_dir = vec_to_other.normalize()
-        except Exception:
+        except ValueError:
             return Vector2(0, 0)
-        acceleration = (g * other._mass) / distance_sq
         
-        return force_dir * acceleration
+        g = self._get_option("constants").get("g", const.CONST_G)
+        acceleration_magnitude = (g * other._mass) / (distance)
+        
+        return force_dir * acceleration_magnitude
         
 
     def _metabolize_tick(self):
