@@ -3,13 +3,13 @@
     "credentials": {
       "fps_lock": 60,
       "window_size": [
-        1680,
-        1080
+        1280,
+        720
       ],
       "background_color": [
-        15,
-        25,
-        63
+        8,
+        12,
+        30
       ],
       "debug_draw": true
     },
@@ -17,7 +17,7 @@
       "wall_margin": 100,
       "wall_strength": 250,
       "constants": {
-        "g": 2
+        "g": 1.0
       }
     }
   },
@@ -128,7 +128,7 @@
       "physical": {
         "cell_mass": 0.4,
         "cell_min_speed": 0.0,
-        "cell_max_speed": 3,
+        "cell_max_speed": 1.0,
         "strength": 1,
         "drag_factor": 0.98,
         "is_movable": true,
@@ -158,7 +158,7 @@
             0
           ]
         ],
-        "max_spawn_number": 1,
+        "max_spawn_number": 80,
         "mutation_rate": 0.05,
         "crossover_rate": 0.05
       },
@@ -198,7 +198,7 @@
         "cell_mass": 1.8,
         "cell_min_speed": 0.0,
         "cell_max_speed": 3.8,
-        "strength": 3,
+        "strength": 6,
         "drag_factor": 0.9,
         "is_movable": true,
         "is_gravitate": false
@@ -213,7 +213,7 @@
         "food": [
           {
             "cell_type_name": "RepairBot",
-            "stats_multiplier": 1
+            "stats_multiplier": 2
           }
         ]
       },
@@ -232,7 +232,7 @@
             -1
           ]
         ],
-        "max_spawn_number": 2,
+        "max_spawn_number": 40,
         "mutation_rate": 0.12,
         "crossover_rate": 0.12
       },
@@ -273,7 +273,7 @@
         "cell_min_speed": 0.0,
         "cell_max_speed": 0.0,
         "strength": 1,
-        "drag_factor": 0.9,
+        "drag_factor": 1.0,
         "is_movable": false,
         "is_gravitate": false
       },

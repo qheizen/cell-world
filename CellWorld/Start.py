@@ -32,7 +32,7 @@ class GameScene(simuc.Simulation):
             print(f"Error while spawning initial cells: {e}")
 
 sim = GameScene()
-sim.initialize_game(r"CellWorld/Scene2.json")
+sim.initialize_game(r"CellWorld/Scene copy.json")
 sim.initialize_spawn()
 sim.initialize_gui()
 sim.main()

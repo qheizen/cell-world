@@ -17,7 +17,7 @@
       "wall_margin": 120,
       "wall_strength": 300,
       "constants": {
-        "g": 3
+        "g": 2
       }
     }
   },
