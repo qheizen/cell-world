@@ -23,7 +23,7 @@ class GameScene(simuc.Simulation):
         try:
             cells_types = self.game_manager.get_cell_types_names_list()
             for cell_type in cells_types:
-                for i in range(1):
+                for i in range(30):
                     self.spawn_to_world(cell_type)
             
             cell_group = self.game_manager.get_group_prototype_with_name("namevd")
@@ -32,7 +32,7 @@ class GameScene(simuc.Simulation):
             print(f"Error while spawning initial cells: {e}")
 
 sim = GameScene()
-sim.initialize_game(r"CellWorld/Scene copy.json")
+sim.initialize_game(r"CellWorld/Scene1.json")
 sim.initialize_spawn()
 sim.initialize_gui()
 sim.main()

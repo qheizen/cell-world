@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d13bb5f-aeaa-4553-a5a2-32a39c23f1f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/GUI/Graph.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/GUI/Graph.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/GlobalEntities/SimulationManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/GlobalEntities/SimulationManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Actors/LocalEntities/Cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/Constants/Constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Constants/Constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CellWorld/InterfaceTemplates/SituationInputTemplate.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/InterfaceTemplates/SituationInputTemplate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CellWorld/Start.py" beforeDir="false" afterPath="$PROJECT_DIR$/CellWorld/Start.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,14 +31,13 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/qheizen/CellWorld.git&quot;,
-    &quot;accountId&quot;: &quot;96271c21-5223-4229-9bd0-c4a1962d1414&quot;
+    &quot;accountId&quot;: &quot;e62139a7-d5f4-48ca-a105-8a222a6d25c4&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="30i00PwhMRY2sJdg6fBKjN2p0vl" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,8 +53,10 @@
     &quot;Python.json_parser.executor&quot;: &quot;Run&quot;,
     &quot;Python.s.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Python/Fun/CellsWorld/CellWorld&quot;
+    &quot;last_opened_file_path&quot;: &quot;E:/Python/Fun/CellsWorld&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -72,10 +68,36 @@
       <recent name="E:\Python\Fun\CellsWorld\CellWorld\Tools" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Start" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="CellsWorld" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13 (PyCharmMiscProject)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CellWorld" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CellWorld/Start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-98f27166c754-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.21829.153" />
+        <option value="bundled-python-sdk-4762d8aabb82-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.30387.173" />
       </set>
     </attachedChunks>
   </component>
